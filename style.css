@@ -253,14 +253,34 @@ body{
 .timeline-actions{margin-top:0.6rem;display:flex;gap:0.5rem}
 .btn{
 	background:var(--accent);
-	color:white;
-	padding:0.4rem 0.7rem;
-	border-radius:6px;
+	color:#ffffff;
+	padding:0.5rem 0.9rem;
+	border-radius:8px;
 	border:none;
 	cursor:pointer;
-	font-size:0.9rem;
+	font-size:0.95rem;
+	font-weight:700;
+	text-shadow:0 1px 2px rgba(0,0,0,0.18);
 }
-.btn:focus{outline:2px solid rgba(102,178,255,0.36);outline-offset:2px}
+.btn:hover,
+.btn:focus-visible{
+	background:#4e88d5;
+	color:#ffffff;
+}
+.btn:focus{outline:2px solid rgba(255,255,255,0.75);outline-offset:2px}
+
+footer p{
+	color:#ffffff;
+}
+
+footer .nav-link{
+	color:rgba(255,255,255,0.75);
+}
+
+footer .nav-link:hover,
+footer .nav-link:focus{
+	color:#ffffff;
+}
 
 /* Small helper to center a heading for the timeline */
 .timeline-heading{ text-align:center; margin-bottom:1.25rem }
