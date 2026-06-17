@@ -166,7 +166,7 @@ body{
 	display:flex;
 	align-items:center;
 	justify-content:center;
-	text-align:left;
+	text-align:start;
 	opacity:0;
 	pointer-events:none;
 	transition:opacity 220ms ease;
@@ -177,6 +177,29 @@ body{
 .milestone-card:focus-within .milestone-overlay{
 	opacity:1;
 	pointer-events:auto;
+}
+
+/* RTL-safe info card styling */
+.info-card{
+	background:rgba(15,23,36,0.92);
+	border:1px solid rgba(102,178,255,0.16);
+	border-radius:20px;
+}
+
+.info-card h2{
+	font-size:1.4rem;
+	margin-bottom:0.75rem;
+}
+
+.info-card p{
+	color:rgba(255,255,255,0.82);
+	line-height:1.7;
+	margin-bottom:1.25rem;
+}
+
+.info-card .btn{
+	background:var(--accent);
+	border:none;
 }
 
 .milestone-extra{
